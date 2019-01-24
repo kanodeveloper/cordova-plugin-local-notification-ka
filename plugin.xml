@@ -3,7 +3,7 @@
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
         xmlns:android="http://schemas.android.com/apk/res/android"
         id="cordova-plugin-local-notification-ka"
-        version="0.8.5">
+        version="0.8.6">
 
     <name>LocalNotification</name>
 
@@ -86,7 +86,7 @@
     <!-- android -->
     <platform name="android">
 
-        <framework src="com.android.support:support-v4:+" value="gradle" />
+        <dependency id="cordova-plugin-google-services-ka" version="~1.0.0"/>
 
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="LocalNotification">
